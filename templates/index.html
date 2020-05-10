@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatBooks</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <div class="leftHeader">
+            <div class="logo">
+                <img class="catbookslogo" src="images/catbook_logo.png" alt="logo de catbooks">
+            </div>
+            <div class="pageTitle">
+                <h1>CatBooks</h1>
+            </div>
+        </div>
+        <ul>
+            <div class="navBar">
+                <button class="button" type="button">
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <button class="button" type="button">
+                        <li><a class="link" href="atributos.html">Atributos</a></li>
+                    </button>
+                    <button class="button" type="button">
+                        <li><a class="link" href="horoscopo.html">Horoscopo Gatuno</a></li>
+                    </button>
+            </div>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="leftContent">
+            <div class="list">
+                <h2>Los gatos mas buscados</h2>
+                <ul class="razas">Lista de gatos por raza:
+                    <li><a class="link2" href="atributos.html">Abisinio</a></li>
+                    <li><a class="link2" href="atributos.html">American</a></li>
+                    <li><a class="link2" href="atributos.html">Bombay</a></li>
+                    <li><a class="link2" href="atributos.html">Himalayo</a></li>
+                    <li><a class="link2" href="atributos.html">Mestizo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightContent">
+            <div class="form">
+                <h2>No estás registrado?</h2>
+                <p>Registrate acá, completando los datos de tu gato según correspondan.
+                </p>
+                <ul class="registro">
+                    <li>Nombre/apodo<input type="text" name="nombre" value=""></li>
+                    <li>Raza<input type="text" name="raza" value=""></li>
+                    <div class="circulos">
+                        Genero
+                        <label class="sexos">Macho
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="sexos">Hembra
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="sexos">Otro
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <li>E-mail<input type="email" name="email" value=""></li>
+                    <li>Password<input type="password" name="password" value=""></li>
+                    <li>Fecha de Nacimiento<input type="date" name="Fecha de Nacimiento" step="1" min="1960-01-01"
+                            max="2020-04-23" value="1960-01-01"> </li>
+                    <textarea placeholder="Deja tu comentario!!!"></textarea>
+                    <li>Ingrese el captcha:<input id="captcha" type="text" value=""></li>
+                    <h4 class="captchaBox" id="generatedCaptcha"></h4>
+                    <h4 class="captchaBox" id="captchaValidation"></h4>
+                    <li><input type="submit" value="Generate Captcha" id="buildCaptchaBtn"></li>
+                    <li><input type="submit" value="Enviar" id="validateCaptchaBtn"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3 class="h3defoot">CatBooks</h3>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
